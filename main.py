@@ -293,7 +293,7 @@ def main(
         skel2d = np.load(root / "skel_2d" / f"{sequence}.npy")
         skel3d = np.load(root / "skel_3d" / f"{sequence}.npy")
         boxes = np.load(root / "boxes" / f"{sequence}.npy")
-        video_path = root / "videos" / f"{sequence}.mp4"
+        #video_path = root / "videos" / f"{sequence}.mp4"
 
         NUM_FRAMES = boxes.shape[0]
         solutions[sequence] = process_sequence(
